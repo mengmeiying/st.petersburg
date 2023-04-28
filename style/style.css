@@ -18,6 +18,7 @@ font-family: 'Raleway', sans-serif; */
   --black: #000000;
   --semi-black: #181515;
   --semi-white: #FDFAF4;
+  --yellow: #FACA47;
 }
 
 body {
@@ -179,6 +180,44 @@ body {
 
 .history {
   background-color: var(--main-color);
+}
+
+.landmarks__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.landmarks__title {
+  margin-bottom: 157px;
+}
+
+.landmarks__text {
+  align-self: end;
+  width: 676px;
+  margin-bottom: 180px;
+  font-size: 18px;
+  line-height: 30px; 
+}
+
+.landmark {
+  display: flex;
+  gap: 24px;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  border-top: 0.5px solid var(--yellow);
+}
+
+.landmark__title {
+  width: 276px;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.landmark__text {
+  width: 476px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .budget {
