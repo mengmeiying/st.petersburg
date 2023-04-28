@@ -35,12 +35,13 @@ body {
 .title {
   margin: 0;
   font-family: 'Prata', serif;
+  font-weight: 400;
   font-size: 32px;
   line-height: 43px;
   color: var(--title-color);
 }
 
-.paragraph {
+.text {
   margin: 0;
 }
 
@@ -52,6 +53,12 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .header {
@@ -118,6 +125,56 @@ body {
 
 .about {
   background-color: var(--main-color);
+}
+
+.about__wrapper {
+  display: flex;
+  gap: 124px;
+}
+
+.about__title {
+  margin-bottom: 57px;
+}
+
+.about__image {
+  width: 771px;
+}
+
+.about__text {
+  margin-bottom: 144px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.about__button {
+  width: 76px;
+  height: 76px;
+  border: 0.5px solid #AD2D11;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about__button--left {
+  margin-right: 24px;
+  background-image: url('../img/arrow-left.svg');
+}
+
+.about__button--right {
+  background-image: url('../img/arrow-right.svg');
+}
+
+.about-guide__container {
+  padding: 191px 20px 220px;
+  background-image: url('../img/bg-peter.png'), url('../img/bg-vase.png');
+  background-repeat: no-repeat;
+  background-position: right 9px top 58px, left 50px bottom 14px;
+}
+
+.about-guide__text {
+  font-family: 'Prata', serif;
+  font-size: 32px;
+  line-height: 54px;
 }
 
 .history {
