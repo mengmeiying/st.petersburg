@@ -1,0 +1,56 @@
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #FDFAF4;
+  --title-color: #AD2D11;
+  --black: #181515;
+  --white: #FDFAF4;
+}
+
+.container {
+  width: 1176px;
+  margin: 0 auto;
+  padding: 124px 20px;
+}
+
+.title {
+  margin: 0;
+  color: var(--title-color);
+}
+
+.paragraph {
+  margin: 0;
+}
+
+.hero {
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  background-color: var(--main-color);
+}
+
+.history {
+  background-color: var(--main-color);
+}
+
+.budget {
+  background-color: var(--main-color);
+}
+
+.map {
+  background-color: var(--main-color);
+}
+
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+}
