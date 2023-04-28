@@ -1,16 +1,29 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+/* font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif; */
 
 :root {
   --main-color: #FDFAF4;
   --title-color: #AD2D11;
-  --black: #181515;
-  --white: #FDFAF4;
+  --black: #000000;
+  --semi-black: #181515;
+  --semi-white: #FDFAF4;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .container {
@@ -21,6 +34,9 @@ html {
 
 .title {
   margin: 0;
+  font-family: 'Prata', serif;
+  font-size: 32px;
+  line-height: 43px;
   color: var(--title-color);
 }
 
@@ -28,10 +44,76 @@ html {
   margin: 0;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.header {
+  position: relative;
+  width: 976px;
+  margin: 0 auto;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 76px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.15;
+  border: 1px solid var(--black);
+}
+
+.header__container {
+  width: initial;
+  position: absolute;
+  left: 41px;
+  padding: 32px 20px 25px 20px;
+}
+
+.header__list {
+  display: flex;
+  gap: 64px;
+  justify-items: center;
+}
+
+.header__link {
+  font-family: 'Raleway', sans-serif;
+  color: var(--black);
+}
+
 .hero {
   background-image: url('../img/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 299px 20px 334px 20px;
+}
+
+.main-title {
+  margin-bottom: 8px;
+  font-family: 'Prata', serif;
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.hero__title {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--black);
+  letter-spacing: -0.5px;
 }
 
 .about {
@@ -51,6 +133,6 @@ html {
 }
 
 .footer {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--semi-black);
+  color: var(--semi-white);
 }

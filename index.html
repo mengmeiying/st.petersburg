@@ -6,20 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Путеводитель по Санкт-Петербургу</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="container"></div>
+    <div class="container header__container">
+      <ul class="header__list list">
+        <li class="header__item"><a class="header__link link" href="#about">О городе</a></li>
+        <li class="header__item"><a class="header__link link" href="#history">История</a></li>
+        <li class="header__item"><a class="header__link link" href="#landmarks">Достопримечательности</a></li>
+        <li class="header__item"><a class="header__link link" href="#budget">Бюджет поездки</a></li>
+        <li class="header__item"><a class="header__link link" href="#map">Карта Петербурга</a></li>
+      </ul>
+    </div>
   </header>
   <section class="hero">
-    <div class="container">
+    <div class="container hero__container">
       <h1 class="title main-title">Путеводитель по Санкт-Петербургу</h1>
+      <h2 class="title hero__title">Рассказываем самое интересное</h2>
     </div>
   </section>
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
       <h2 class="title section-title">О городе</h2>
     </div>
@@ -30,22 +42,22 @@
       </p>
     </div>
   </section>
-  <section class="history">
+  <section id="history" class="history">
     <div class="container">
       <h2 class="title section-title">История</h2>
     </div>
   </section>
-  <section class="landmarks">
+  <section id="landmarks" class="landmarks">
     <div class="container">
       <h2 class="title section-title">Достопримечательности</h2>
     </div>
   </section>
-  <section class="budget">
+  <section id="budget" class="budget">
     <div class="container">
       <h2 class="title section-title">Бюджет поездки</h2>
     </div>
   </section>
-  <section class="map">
+  <section id="map" class="map">
     <div class="container">
       <h2 class="title section-title">Карта Петербурга</h2>
     </div>
