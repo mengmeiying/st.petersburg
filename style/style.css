@@ -22,6 +22,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
+  counter-reset: history;
 }
 
 .container {
@@ -182,6 +183,100 @@ body {
   background-color: var(--main-color);
 }
 
+.history__title {
+  margin-bottom: 85px;
+}
+
+.history__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 913px;
+  margin: 0 auto;
+}
+
+.history-card {
+  position: relative;
+  display: flex;
+  gap: 13px;
+  height: 162px;
+  text-align: center;
+}
+
+.history-card::before {
+  counter-increment: history;
+  content: counter(history);
+  position: absolute;
+  left: -20px;
+  top: 60px;
+  width: 40px;
+  height: 40px;
+  padding: 12px 15px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  color: var(--semi-white);
+  font-family: 'Prata', serif;
+  font-size: 18px;
+  line-height: 18px;
+
+}
+
+.history-card:nth-child(2n) {
+  align-self: flex-start;
+  flex-direction: row-reverse;
+}
+
+.history-card:nth-child(2n)::before {
+  left: initial;
+  right: -20px;
+}
+
+.history-card__wrapper {
+   width: 294px;
+}
+
+.history-card__title-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 81px;
+  border-left: 1px solid var(--yellow);
+  border-bottom: 1px solid var(--yellow);
+  padding: 12px 33px;
+}
+
+.history-card:first-of-type .history-card__title-wrapper {
+  border-left: none;
+}
+
+.history-card__text-wrapper {
+  height: 81px;
+  border-left: 1px solid var(--yellow);
+  padding: 12px 33px;
+}
+
+.history-card:nth-child(2n) .history-card__title-wrapper, 
+.history-card:nth-child(2n) .history-card__text-wrapper {
+  border-right: 1px solid var(--yellow);
+  border-left: none;
+}
+
+.history-card:last-of-type .history-card__text-wrapper {
+  border-left: none;
+}
+
+.history-card__text {
+  font-weight: 300;
+}
+
+.history-card__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  outline: 1px solid var(--yellow);
+  outline-offset: 13px;
+}
+
 .landmarks__container {
   display: flex;
   flex-direction: column;
@@ -196,7 +291,7 @@ body {
   width: 676px;
   margin-bottom: 180px;
   font-size: 18px;
-  line-height: 30px; 
+  line-height: 30px;
 }
 
 .landmark {
