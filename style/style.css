@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  width: 1176px;
+  width: 1216px;
   margin: 0 auto;
   padding: 124px 20px;
 }
@@ -140,8 +140,9 @@ body {
 }
 
 .about__container {
-  width: 1366px;
-  padding-right: 120px;
+  width: 1400px;
+  padding-right: 0;
+  padding-top: 200px;
 }
 
 .about__wrapper {
@@ -151,6 +152,7 @@ body {
 
 .about__title {
   margin-bottom: 57px;
+  padding-left: 92px;
 }
 
 .about__image {
@@ -158,6 +160,7 @@ body {
 }
 
 .about__text {
+  width: 312px;
   margin-bottom: 144px;
   font-size: 18px;
   line-height: 26px;
@@ -198,12 +201,12 @@ body {
 }
 
 .about__button--left {
-  right: 170px;
+  right: 410px;
   bottom: 100px;
 }
 
 .about__button--right {
-  right: 60px;
+  right: 310px;
   bottom: 100px;
 }
 
@@ -226,7 +229,7 @@ body {
 }
 
 .about-guide__container {
-  padding: 191px 20px 220px;
+  padding: 191px 78px 220px 20px;
   background-image: url('../img/bg-peter.png'), url('../img/bg-vase.png');
   background-repeat: no-repeat;
   background-position: right 9px top 58px, left 50px bottom 14px;
@@ -243,14 +246,14 @@ body {
 }
 
 .history__title {
-  margin-bottom: 85px;
+  margin-bottom: 63px;
 }
 
 .history__list {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 913px;
+  width: 951px;
   margin: 0 auto;
 }
 
@@ -258,7 +261,7 @@ body {
   position: relative;
   display: flex;
   gap: 13px;
-  height: 162px;
+  height: 200px;
   text-align: center;
 }
 
@@ -291,7 +294,7 @@ body {
 }
 
 .history-card__wrapper {
-   width: 294px;
+   width: 313px;
 }
 
 .history-card__title-wrapper {
@@ -301,7 +304,7 @@ body {
   height: 81px;
   border-left: 1px solid var(--yellow);
   border-bottom: 1px solid var(--yellow);
-  padding: 12px 33px;
+  padding: 12px 18px 8px 58px;
 }
 
 .history-card:first-of-type .history-card__title-wrapper {
@@ -309,9 +312,9 @@ body {
 }
 
 .history-card__text-wrapper {
-  height: 81px;
+  height: 120px;
   border-left: 1px solid var(--yellow);
-  padding: 12px 33px;
+  padding: 18px 33px 12px 67px;
 }
 
 .history-card:nth-child(2n) .history-card__title-wrapper, 
@@ -324,8 +327,14 @@ body {
   border-left: none;
 }
 
+.history-card__title {
+  line-height: 24px;
+  letter-spacing: -0.3px;
+}
+
 .history-card__text {
   font-weight: 300;
+  line-height: 138%;
 }
 
 .history-card__image {
@@ -339,6 +348,7 @@ body {
 .landmarks__container {
   display: flex;
   flex-direction: column;
+  padding-top: 172px;
 }
 
 .landmarks__title {
@@ -379,18 +389,21 @@ body {
 }
 
 .budget__title {
-  margin-bottom: 57px;
+  margin-bottom: 56px;
 }
 
 .budget__container {
   display: flex;
   flex-direction: column;
+  padding-top: 76px;
 }
 
 .budget__text {
   width: 676px;
   align-self: end;
-  margin-bottom: 226px;
+  margin-bottom: 241px;
+  line-height: 167%;
+  font-size: 18px;
 }
 
 .budget__list {
@@ -402,6 +415,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 233px;
   padding-top: 90px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -424,6 +438,7 @@ body {
 }
 
 .budget-item__title {
+  margin-bottom: 15px;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -442,8 +457,15 @@ body {
   background-color: var(--main-color);
 }
 
+.map__container {
+  padding-top: 141px;
+  padding-bottom: 55px;
+}
+
 .map__image {
-  width: 100%;
+  display: block;
+  width: 1366px;
+  margin: 0 auto;
 }
 
 .footer {
@@ -454,12 +476,13 @@ body {
 .footer__container {
   display: flex;
   flex-direction: column;
-  padding: 48px 20px 24px 20px;
+  padding: 41px 20px 24px 20px;
 }
 
 .footer__list {
+  width: 576px;
   columns: 2;
-  column-gap: 105px;
+  column-gap: 26px;
   align-self: end;
   margin-bottom: 25px;
 }
