@@ -95,6 +95,15 @@ body {
 .header__link {
   font-family: 'Raleway', sans-serif;
   color: var(--black);
+  transition: color 0.3s ease-in-out;
+}
+
+.header__link:hover {
+  color: var(--title-color);
+}
+
+.header__link:active {
+  color: var(--yellow);
 }
 
 .hero {
@@ -116,6 +125,7 @@ body {
   font-family: 'Prata', serif;
   font-size: 48px;
   line-height: 65px;
+  color: var(--title-color)
 }
 
 .hero__title {
@@ -153,17 +163,37 @@ body {
   height: 76px;
   border: 0.5px solid #AD2D11;
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
+  transition: border-color 0.3s ease-in-out;
 }
+
+.about__button path {
+  transition: stroke 0.3s ease-in-out;
+}
+
+.about__button:hover path{
+  stroke: var(--yellow);
+}
+
+.about__button:hover{
+  border-color: var(--yellow);
+}
+
+.about__button:active path{
+  stroke: var(--semi-black);
+}
+
+.about__button:active{
+  border-color: var(--semi-black);
+}
+
 
 .about__button--left {
   margin-right: 24px;
-  background-image: url('../img/arrow-left.svg');
+
 }
 
 .about__button--right {
-  background-image: url('../img/arrow-right.svg');
+
 }
 
 .about-guide__container {
@@ -411,6 +441,15 @@ body {
 
 .footer__link {
   color: var(--semi-white);
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__link:hover {
+  color: var(--yellow);
+}
+
+.footer__link:active {
+  color: var(--title-color);
 }
 
 .footer__copyright {
