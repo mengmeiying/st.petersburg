@@ -11,11 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/animate.min.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header wow fadeInDown">
     <div class="container header__container">
       <ul class="header__list list">
         <li class="header__item"><a class="header__link link" href="#about">О городе</a></li>
@@ -28,14 +29,14 @@
   </header>
   <section class="hero">
     <div class="container hero__container">
-      <h1 class="title main-title">Путеводитель по Санкт-Петербургу</h1>
-      <h2 class="title hero__title">Рассказываем самое интересное</h2>
+      <h1 class="title main-title wow fadeInUp">Путеводитель по Санкт-Петербургу</h1>
+      <h2 class="title hero__title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">Рассказываем самое интересное</h2>
     </div>
   </section>
-  <section id="about" class="about">
+  <section id="about" class="about wow">
     <div class="container">
-      <h2 class="title section-title about__title">О городе</h2>
-      <div class="about__wrapper">
+      <h2 class="title section-title about__title wow fadeInLeft" data-wow-offset="300">О городе</h2>
+      <div class="about__wrapper wow fadeInUp" data-wow-offset="300">
         <img class="about__image" src="img/about-1.jpg" alt="">
         <div>
           <p class="text about__text">Санкт-Петербург — один из самых красивых городов России, который привлекает
@@ -46,7 +47,7 @@
       </div>
     </div>
   </section>
-  <section class="about-guide">
+  <section class="about-guide wow fadeIn wow" data-wow-offset="500" data-wow-duration="2s">
     <div class="container about-guide__container">
       <p class="text about-guide__text">В этом путеводителе мы расскажем о самых интересных местах Санкт-Петербурга,
         которые обязательно стоит посетить при поездке в этот прекрасный город.
@@ -55,9 +56,9 @@
   </section>
   <section id="history" class="history">
     <div class="container history__container">
-      <h2 class="title section-title history__title">История</h2>
+      <h2 class="title section-title history__title wow fadeInLeft">История</h2>
       <ul class="list history__list">
-        <li class="history__item history-card">
+        <li class="history__item history-card wow fadeIn" data-wow-offset="200">
           <div class="history-card__wrapper">
             <div class="history-card__title-wrapper">
               <h3 class="title history-card__title">
@@ -70,7 +71,7 @@
           </div>
           <img src="img/history-1.jpg" alt="" class="history-card__image">
         </li>
-        <li class="history__item history-card">
+        <li class="history__item history-card wow fadeIn" data-wow-offset="200">
           <div class="history-card__wrapper">
             <div class="history-card__title-wrapper">
               <h3 class="title history-card__title">
@@ -83,7 +84,7 @@
           </div>
           <img src="img/history-2.jpg" alt="" class="history-card__image">
         </li>
-        <li class="history__item history-card">
+        <li class="history__item history-card wow fadeIn" data-wow-offset="200">
           <div class="history-card__wrapper">
             <div class="history-card__title-wrapper">
               <h3 class="title history-card__title">
@@ -96,7 +97,7 @@
           </div>
           <img src="img/history-3.jpg" alt="" class="history-card__image">
         </li>
-        <li class="history__item history-card">
+        <li class="history__item history-card wow fadeIn" data-wow-offset="200">
           <div class="history-card__wrapper">
             <div class="history-card__title-wrapper">
               <h3 class="title history-card__title">
@@ -109,7 +110,7 @@
           </div>
           <img src="img/history-4.jpg" alt="" class="history-card__image">
         </li>
-        <li class="history__item history-card">
+        <li class="history__item history-card wow fadeIn" data-wow-offset="200">
           <div class="history-card__wrapper">
             <div class="history-card__title-wrapper">
               <h3 class="title history-card__title">
@@ -122,7 +123,7 @@
           </div>
           <img src="img/history-5.jpg" alt="" class="history-card__image">
         </li>
-        <li class="history__item history-card">
+        <li class="history__item history-card wow fadeIn" data-wow-offset="200">
           <div class="history-card__wrapper">
             <div class="history-card__title-wrapper">
               <h3 class="title history-card__title">
@@ -135,7 +136,7 @@
           </div>
           <img src="img/history-6.jpg" alt="" class="history-card__image">
         </li>
-        <li class="history__item history-card">
+        <li class="history__item history-card wow fadeIn" data-wow-offset="200">
           <div class="history-card__wrapper">
             <div class="history-card__title-wrapper">
               <h3 class="title history-card__title">
@@ -148,7 +149,7 @@
           </div>
           <img src="img/history-7.jpg" alt="" class="history-card__image">
         </li>
-        <li class="history__item history-card">
+        <li class="history__item history-card wow fadeIn" data-wow-offset="200">
           <div class="history-card__wrapper">
             <div class="history-card__title-wrapper">
               <h3 class="title history-card__title">
@@ -161,7 +162,7 @@
           </div>
           <img src="img/history-8.jpg" alt="" class="history-card__image">
         </li>
-        <li class="history__item history-card">
+        <li class="history__item history-card wow fadeIn" data-wow-offset="200">
           <div class="history-card__wrapper">
             <div class="history-card__title-wrapper">
               <h3 class="title history-card__title">
@@ -180,12 +181,12 @@
   </section>
   <section id="landmarks" class="landmarks">
     <div class="container landmarks__container">
-      <h2 class="title section-title landmarks__title">Достопримечательности</h2>
-      <p class="text landmarks__text">Санкт-Петербург — город, который известен своими красивыми зданиями, музеями и
+      <h2 class="title section-title landmarks__title wow fadeInLeft" data-wow-offset="200">Достопримечательности</h2>
+      <p class="text landmarks__text wow fadeInRight" data-wow-offset="200">Санкт-Петербург — город, который известен своими красивыми зданиями, музеями и
         парками. Это один из самых красивых городов России, который привлекает миллионы туристов каждый год. В этой
         статье мы расскажем о самых знаменитых достопримечательностях Санкт-Петербурга.</p>
       <ul class="list landmarks__list">
-        <li class="landmarks__item landmark">
+        <li class="landmarks__item landmark wow fadeInLeftBig" data-wow-offset="200">
           <h3 class="title landmark__title">Эрмитаж</h3>
           <img class="landmark__image" src="img/landmarks-1.jpg" alt="">
           <p class="text landmark__text">Эрмитаж — один из самых известных музеев мира, который находится в самом сердце
@@ -193,7 +194,7 @@
             античные скульптуры, древние монеты и многое другое. Здание музея само по себе является
             достопримечательностью — это огромный дворец с белоснежными колоннами и золотыми украшениями.</p>
         </li>
-        <li class="landmarks__item landmark">
+        <li class="landmarks__item landmark wow fadeInRightBig" data-wow-offset="200">
           <h3 class="title landmark__title">Дворцовая площадь</h3>
           <img class="landmark__image" src="img/landmarks-2.jpg" alt="">
           <p class="text landmark__text">Дворцовая площадь — это центральная площадь Санкт-Петербурга, на которой
@@ -202,14 +203,14 @@
             Площадь окружена красивыми зданиями и колоннами, а также является местом проведения различных праздников и
             мероприятий.</p>
         </li>
-        <li class="landmarks__item landmark">
+        <li class="landmarks__item landmark wow fadeInLeftBig" data-wow-offset="200">
           <h3 class="title landmark__title">Зимний дворец</h3>
           <img class="landmark__image" src="img/landmarks-3.jpg" alt="">
           <p class="text landmark__text">Зимний дворец — один из самых красивых и известных дворцов России. Он был
             построен в XVIII веке для императорской семьи и находится на Дворцовой площади. Сегодня в здании Зимнего
             дворца находится Эрмитаж.</p>
         </li>
-        <li class="landmarks__item landmark">
+        <li class="landmarks__item landmark wow fadeInRightBig" data-wow-offset="200">
           <h3 class="title landmark__title">Петергоф</h3>
           <img class="landmark__image" src="img/landmarks-4.jpg" alt="">
           <p class="text landmark__text">Петергоф — это знаменитый дворцово-парковый комплекс, расположенный на берегу
@@ -217,7 +218,7 @@
             достопримечательностей Санкт-Петербурга. В Петергофе находятся многочисленные фонтаны, скульптуры и дворцы.
           </p>
         </li>
-        <li class="landmarks__item landmark">
+        <li class="landmarks__item landmark wow fadeInLeftBig" data-wow-offset="200">
           <h3 class="title landmark__title">Исаакиевский собор</h3>
           <img class="landmark__image" src="img/landmarks-5.jpg" alt="">
           <p class="text landmark__text">Исаакиевский собор — это один из самых красивых и величественных храмов
@@ -229,23 +230,23 @@
   </section>
   <section id="budget" class="budget">
     <div class="container budget__container">
-      <h2 class="title section-title budget__title">Бюджет поездки</h2>
-      <p class="text budget__text">Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам
+      <h2 class="title section-title budget__title wow fadeInLeft" data-wow-offset="200">Бюджет поездки</h2>
+      <p class="text budget__text wow fadeInRight" data-wow-offset="200">Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам
         для путешествия.</p>
       <ul class="list budget__list">
-        <li class="budget__item budget-item budget-item--living">
+        <li class="budget__item budget-item budget-item--living wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s" data-wow-offset="200">
           <h3 class="title budget-item__title">Проживание</h3>
           <p class="text budget-item__text">от 2000 ₽</p>
         </li>
-        <li class="budget__item budget-item budget-item--check">
+        <li class="budget__item budget-item budget-item--check wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s" data-wow-offset="200">
           <h3 class="title budget-item__title">Средний чек в ресторане</h3>
           <p class="text budget-item__text">1300 ₽</p>
         </li>
-        <li class="budget__item budget-item budget-item--excursion">
+        <li class="budget__item budget-item budget-item--excursion wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s" data-wow-offset="200">
           <h3 class="title budget-item__title">Экскурсии</h3>
           <p class="text budget-item__text">от 1000 ₽</p>
         </li>
-        <li class="budget__item budget-item budget-item--souvenir">
+        <li class="budget__item budget-item budget-item--souvenir wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s" data-wow-offset="200">
           <h3 class="title budget-item__title">Сувениры</h3>
           <p class="text budget-item__text">от 300 ₽</p>
         </li>
@@ -254,11 +255,11 @@
   </section>
   <section id="map" class="map">
     <div class="container">
-      <h2 class="title section-title">Карта Петербурга</h2>
+      <h2 class="title section-title wow fadeInLeft" data-wow-offset="200">Карта Петербурга</h2>
     </div>
-    <img class="map__image" src="img/map.png" alt="">
+    <img class="map__image wow fadeInDown" src="img/map.png" alt="" data-wow-offset="200">
   </section>
-  <footer class="footer">
+  <footer class="footer wow fadeInUp">
     <div class="container footer__container">
       <ul class="list footer__list">
         <li class="footer__item"><a href="#" class="link footer__link">О городе</a></li>
@@ -273,6 +274,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/wow.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
