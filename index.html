@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="style/animate.min.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
@@ -30,26 +31,61 @@
   <section class="hero">
     <div class="container hero__container">
       <h1 class="title main-title wow fadeInUp">Путеводитель по Санкт-Петербургу</h1>
-      <h2 class="title hero__title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">Рассказываем самое интересное</h2>
+      <h2 class="title hero__title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">Рассказываем самое
+        интересное</h2>
     </div>
   </section>
   <section id="about" class="about wow">
-    <div class="container">
+    <div class="container about__container">
       <h2 class="title section-title about__title wow fadeInLeft" data-wow-offset="300">О городе</h2>
-      <div class="about__wrapper wow fadeInUp" data-wow-offset="300">
-        <img class="about__image" src="img/about-1.jpg" alt="">
-        <div>
-          <p class="text about__text">Санкт-Петербург — один из самых красивых городов России, который привлекает
-            туристов со всего мира своей архитектурой, культурными достопримечательностями и богатой историей.</p>
-          <button class="button about__button about__button--left"><svg width="45" height="39" viewBox="0 0 45 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.41537 20.0001H44.9241M20.1676 0.908203C20.1676 0.908203 18.7315 7.95744 13.4282 13.2607C8.12492 18.564 1.07568 20.0001 1.07568 20.0001C1.07568 20.0001 7.76046 21.7351 13.3764 26.6439C18.9923 31.5528 21.0437 38.2158 21.0437 38.2158" stroke="#AD2D11"/>
+      <div class="wow fadeInUp" data-wow-offset="300">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide about__wrapper">
+              <img class="about__image" src="img/about-1.jpg" alt="">
+              <div>
+                <p class="text about__text">Санкт-Петербург — один из самых красивых городов России, который привлекает
+                  туристов со всего мира своей архитектурой, культурными достопримечательностями и богатой историей.</p>
+              </div>
+            </div>
+            <div class="swiper-slide about__wrapper">
+              <img class="about__image" src="img/about-1.jpg" alt="">
+              <div>
+                <p class="text about__text">Санкт-Петербург — один из самых красивых городов России, который привлекает
+                  туристов со всего мира своей архитектурой, культурными достопримечательностями и богатой историей.</p>
+              </div>
+            </div>
+            <div class="swiper-slide about__wrapper">
+              <img class="about__image" src="img/about-1.jpg" alt="">
+              <div>
+                <p class="text about__text">Санкт-Петербург — один из самых красивых городов России, который привлекает
+                  туристов со всего мира своей архитектурой, культурными достопримечательностями и богатой историей.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <button class="swiper-button-prev button about__button about__button--left"><svg width="45" height="39"
+              viewBox="0 0 45 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.41537 20.0001H44.9241M20.1676 0.908203C20.1676 0.908203 18.7315 7.95744 13.4282 13.2607C8.12492 18.564 1.07568 20.0001 1.07568 20.0001C1.07568 20.0001 7.76046 21.7351 13.3764 26.6439C18.9923 31.5528 21.0437 38.2158 21.0437 38.2158"
+                stroke="#AD2D11" />
             </svg>
-            </button>
-          <button class="button about__button about__button--right"><svg width="45" height="39" viewBox="0 0 45 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M43.5844 19.0001H0.0756836M24.8322 38.092C24.8322 38.092 26.2682 31.0428 31.5715 25.7395C36.8748 20.4362 43.9241 19.0002 43.9241 19.0002C43.9241 19.0002 37.2393 17.2651 31.6234 12.3563C26.0074 7.44749 23.956 0.784424 23.956 0.784424" stroke="#AD2D11"/>
+          </button>
+          <button class="swiper-button-next button about__button about__button--right"><svg width="45" height="39"
+              viewBox="0 0 45 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M43.5844 19.0001H0.0756836M24.8322 38.092C24.8322 38.092 26.2682 31.0428 31.5715 25.7395C36.8748 20.4362 43.9241 19.0002 43.9241 19.0002C43.9241 19.0002 37.2393 17.2651 31.6234 12.3563C26.0074 7.44749 23.956 0.784424 23.956 0.784424"
+                stroke="#AD2D11" />
             </svg>
-            </button>
+          </button>
         </div>
+
       </div>
     </div>
   </section>
@@ -150,7 +186,8 @@
               </h3>
             </div>
             <div class="history-card__text-wrapper">
-              <p class="text history-card__text">Присвоение городу Ленинграду звания Города-героя. Ленинград — город-герой</p>
+              <p class="text history-card__text">Присвоение городу Ленинграду звания Города-героя. Ленинград —
+                город-герой</p>
             </div>
           </div>
           <img src="img/history-7.jpg" alt="" class="history-card__image">
@@ -163,7 +200,8 @@
               </h3>
             </div>
             <div class="history-card__text-wrapper">
-              <p class="text history-card__text">Возвращение городу прежнего названия Санкт-Петербург, о чём был подписан Указ Президиума Верховного Совета РСФСР</p>
+              <p class="text history-card__text">Возвращение городу прежнего названия Санкт-Петербург, о чём был
+                подписан Указ Президиума Верховного Совета РСФСР</p>
             </div>
           </div>
           <img src="img/history-8.jpg" alt="" class="history-card__image">
@@ -188,7 +226,8 @@
   <section id="landmarks" class="landmarks">
     <div class="container landmarks__container">
       <h2 class="title section-title landmarks__title wow fadeInLeft" data-wow-offset="200">Достопримечательности</h2>
-      <p class="text landmarks__text wow fadeInRight" data-wow-offset="200">Санкт-Петербург — город, который известен своими красивыми зданиями, музеями и
+      <p class="text landmarks__text wow fadeInRight" data-wow-offset="200">Санкт-Петербург — город, который известен
+        своими красивыми зданиями, музеями и
         парками. Это один из самых красивых городов России, который привлекает миллионы туристов каждый год. В этой
         статье мы расскажем о самых знаменитых достопримечательностях Санкт-Петербурга.</p>
       <ul class="list landmarks__list">
@@ -237,22 +276,27 @@
   <section id="budget" class="budget">
     <div class="container budget__container">
       <h2 class="title section-title budget__title wow fadeInLeft" data-wow-offset="200">Бюджет поездки</h2>
-      <p class="text budget__text wow fadeInRight" data-wow-offset="200">Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам
+      <p class="text budget__text wow fadeInRight" data-wow-offset="200">Перед поездкой необходимо рассчитать
+        приблизительный бюджет, который понадобится вам
         для путешествия.</p>
       <ul class="list budget__list">
-        <li class="budget__item budget-item budget-item--living wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s" data-wow-offset="200">
+        <li class="budget__item budget-item budget-item--living wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s"
+          data-wow-offset="200">
           <h3 class="title budget-item__title">Проживание</h3>
           <p class="text budget-item__text">от 2000 ₽</p>
         </li>
-        <li class="budget__item budget-item budget-item--check wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s" data-wow-offset="200">
+        <li class="budget__item budget-item budget-item--check wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s"
+          data-wow-offset="200">
           <h3 class="title budget-item__title">Средний чек в ресторане</h3>
           <p class="text budget-item__text">1300 ₽</p>
         </li>
-        <li class="budget__item budget-item budget-item--excursion wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s" data-wow-offset="200">
+        <li class="budget__item budget-item budget-item--excursion wow fadeIn" data-wow-delay="0.3s"
+          data-wow-duration="2s" data-wow-offset="200">
           <h3 class="title budget-item__title">Экскурсии</h3>
           <p class="text budget-item__text">от 1000 ₽</p>
         </li>
-        <li class="budget__item budget-item budget-item--souvenir wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s" data-wow-offset="200">
+        <li class="budget__item budget-item budget-item--souvenir wow fadeIn" data-wow-delay="0.4s"
+          data-wow-duration="2s" data-wow-offset="200">
           <h3 class="title budget-item__title">Сувениры</h3>
           <p class="text budget-item__text">от 300 ₽</p>
         </li>
@@ -281,6 +325,7 @@
     </div>
   </footer>
   <script src="js/wow.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.js" defer></script>
 </body>
 

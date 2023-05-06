@@ -139,6 +139,11 @@ body {
   background-color: var(--main-color);
 }
 
+.about__container {
+  width: 1366px;
+  padding-right: 120px;
+}
+
 .about__wrapper {
   display: flex;
   gap: 124px;
@@ -159,6 +164,8 @@ body {
 }
 
 .about__button {
+  left: initial;
+  top: initial;
   width: 76px;
   height: 76px;
   border: 0.5px solid #AD2D11;
@@ -186,14 +193,36 @@ body {
   border-color: var(--semi-black);
 }
 
+.about__button::after {
+  display: none;
+}
 
 .about__button--left {
-  margin-right: 24px;
-
+  right: 170px;
+  bottom: 100px;
 }
 
 .about__button--right {
+  right: 60px;
+  bottom: 100px;
+}
 
+.about .swiper-pagination {
+  left: 330px;
+  bottom: var(--swiper-pagination-bottom,25px);
+  text-align: left;
+}
+
+.about .swiper-pagination-bullet {
+  width: 32px;
+  height: 2px;
+  border-radius: 0;
+  background-color: #ffffff;
+  opacity: initial;
+}
+
+.about .swiper-pagination-bullet-active {
+  background-color: var(--yellow);
 }
 
 .about-guide__container {
