@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         var myPlacemark = new ymaps.Placemark([59.938955, 30.315644], {
           iconContent: 'САНКТ-ПЕТЕРБУРГ',
-          balloonContent: 'Столица России',
+          balloonContent: 'Культурная Столица России',
         }, {
           iconLayout: "default#image",
           iconImageHref: "../img/point.svg",
