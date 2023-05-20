@@ -462,10 +462,8 @@ body {
   padding-bottom: 55px;
 }
 
-.map__image {
-  display: block;
-  width: 1366px;
-  margin: 0 auto;
+[class*="ground-pane"] {
+  filter: hue-rotate(-140deg) grayscale(0.5);
 }
 
 .footer {

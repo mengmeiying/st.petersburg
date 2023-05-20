@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="style/animate.min.css">
   <link rel="stylesheet" href="style/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 
 <body>
@@ -83,7 +85,6 @@
             </svg>
           </button>
         </div>
-
       </div>
     </div>
   </section>
@@ -217,7 +218,6 @@
           </div>
           <img src="img/history-9.jpg" alt="Мужчина с младенцем на руках" class="history-card__image">
         </li>
-
       </ul>
     </div>
   </section>
@@ -305,7 +305,7 @@
     <div class="container map__container">
       <h2 class="title section-title wow fadeInLeft" data-wow-offset="200">Карта Петербурга</h2>
     </div>
-    <img class="map__image wow fadeInDown" src="img/map.png" alt="" data-wow-offset="200">
+    <div id="map-container" class="map__image wow fadeInDown" style="height: 488px" data-wow-offset="200"></div>
   </section>
   <footer class="footer wow fadeInUp">
     <div class="container footer__container">
