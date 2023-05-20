@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  min-width: 1400px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -137,12 +138,14 @@ body {
 
 .about {
   background-color: var(--main-color);
+  padding-bottom: 124px;
 }
 
 .about__container {
   width: 1400px;
   padding-right: 0;
   padding-top: 200px;
+  padding-bottom: 0;
 }
 
 .about__wrapper {
@@ -156,7 +159,9 @@ body {
 }
 
 .about__image {
-  width: 771px;
+  min-height: 476px;
+  min-width: 771px;
+  width: 56%;
 }
 
 .about__text {
@@ -211,9 +216,9 @@ body {
 }
 
 .about .swiper-pagination {
-  left: 330px;
+  width: 56%;
   bottom: var(--swiper-pagination-bottom,25px);
-  text-align: left;
+
 }
 
 .about .swiper-pagination-bullet {
